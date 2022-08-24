@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Entypo from '@expo/vector-icons/Entypo';
 
 type RootStackParamsList = {
   Home: undefined;
@@ -14,6 +15,7 @@ const Home = () => (
   <SafeAreaView>
     <StatusBar />
     <Text>Home</Text>
+    <Entypo name="dots-three-vertical" size={24} color="black" />
   </SafeAreaView>
 )
 
